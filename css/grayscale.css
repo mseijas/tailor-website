@@ -1,9 +1,3 @@
-/*!
- * Start Bootstrap - Grayscale Bootstrap Theme (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
-
 body {
     width: 100%;
     height: 100%;
@@ -57,22 +51,44 @@ a:focus {
     color: #1d9b6c;
 }
 
+.navbar-header {
+    display: none;
+}
+
 .logo-text {
     font-family: Montserrat;
     font-weight: 700;
 }
 
+
+
+
+.intro-logo-container {
+    /*margin-bottom: 5vh;*/
+    /*margin-bottom: -3vh;*/
+    margin-bottom: -1vh;
+}
+
 .intro-logo-container .logo-text {
-    font-size: 2em;
+    font-size: 15vw;
     color: #ffc302;
     text-align: center;
     margin: auto;
 }
 
+.intro-logo-container .logo-subtext {
+    font-family: Montserrat;
+    font-weight: 100;
+    font-size: 4.5vw;
+    color: #bdbdbd;
+    margin-top: -13px;
+    margin-bottom: 60px;
+}
+
 .intro-logo-container .img-logo {
     text-align: center;
     margin: auto;
-    width: 20vw;
+    width: 13vw;
     height: auto;
 }
 
@@ -145,6 +161,7 @@ a:focus {
     text-align: center;
     color: #ffc302;
     background: url(../img/tailor-bg.png) no-repeat top center scroll;
+    background-position: 50% -10%;
     background-color: #fff;
     -webkit-background-size: 135% auto;
     -moz-background-size: 135% auto;
@@ -155,6 +172,7 @@ a:focus {
 .intro .intro-body {
     display: table-cell;
     vertical-align: bottom;
+    padding-bottom: 0;
 }
 
 .intro .intro-body .brand-heading {
@@ -165,15 +183,119 @@ a:focus {
     font-size: 18px;
 }
 
-@media(min-width:950px) {
+.intro-col {
+    margin-top: 30vh !important;
+}
+
+.ico-down {
+    display: none;
+}
+
+@media(min-width:321px) {
+    .intro .intro-body {
+        padding-bottom: 0vh;
+    }
+
+    .intro-col {
+        margin-top: 0;
+    }
+
+    .intro-button-container {
+        margin-bottom: -1vh;
+    }
+
+    .intro-logo-container {
+        margin-top: -1.6vh;
+    }
+}
+
+@media(min-width:800px) {
+    /*.intro-logo-container .img-logo {
+        display: none;
+    }*/
+
+    .intro-col {
+        margin-top: 66vh !important;
+    }
+}
+
+@media(min-width:700px) {
+    .ico-down {
+        display: block;
+        margin-top: 0.6em;
+        font-size: 2em;
+        color: #c3c3c3;
+    }
+
+    .ico-down {
+        margin-top: 1em;
+    }
+
+    .intro-logo-container .logo-text {
+        font-size: 10vw;
+    }
+
+    .intro-logo-container .logo-subtext {
+        font-size: 3.15vw;
+        margin-top: -13px;
+        margin-bottom: 60px;
+    }
+
+    .intro-logo-container .img-logo {
+        width: 9vw;
+    }
+
     .intro {
         height: 100%;
         padding: 0;
-        background-position: bottom center;
+        background-position: 50% -50%;
+    }
+}
+
+.white-bg {
+    display: none;
+}
+
+@media(min-width:1460px) {
+    .intro {
+        background-position: 50% -52vh !important;
+    }
+}
+
+@media(min-width:1620px) {
+    .intro {
+        background-position: 50% -62vh !important;
+        }
+}
+
+@media(min-width:2000px) {
+    .intro {
+        background-position: 50% -82vh !important;
+    }
+}
+
+@media(min-width:2260px) {
+    .intro {
+        background-position: 50% -102vh !important;
+    }
+}
+
+@media(min-width:850px) {
+    .intro {
+        height: 100%;
+        padding: 0;
+        background-size: 100% 100%;
+        background-position: 50% -40vh;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         background-size: cover;
         -o-background-size: cover;
+    }
+
+    .intro .intro-body {
+        display: table-cell;
+        vertical-align: bottom;
+        padding: 0;
     }
 
     .intro .intro-body .brand-heading {
@@ -185,8 +307,37 @@ a:focus {
     }
 
     .intro-button-container {
-        /*margin-bottom: 10%;*/
-        margin-bottom: 10vh;
+        margin-bottom: 3vh;
+    }
+
+    .intro-logo-container {
+        position: absolute;
+        top: -30vh;
+        width: 100%;
+    }
+
+    .intro-logo-container .logo-text {
+        font-size: 5.5em;
+    }
+
+    .intro-logo-container .logo-subtext {
+        font-size: 1.8em;
+    }
+
+    .intro-logo-container .img-logo {
+        width: 78px;
+    }
+
+    .intro-button-container {
+        margin-bottom: -4vh;
+    }
+
+    .ico-down {
+        margin-top: 1em;
+    }
+
+    .btn-gray, .ico-down {
+        margin-left: 30px;
     }
 }
 
@@ -323,7 +474,6 @@ a:focus {
     border: solid 3px #ffc302;
     color: #fff;
     background-color: #ffc302;
-    /*background-color: transparent;*/
 }
 
 .btn-secondary {
