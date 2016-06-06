@@ -488,6 +488,14 @@ a:focus {
     padding-right: 0 !important;
 }
 
+#register .form-row {
+    width: 70%
+}
+
+#register .form-row div{
+    padding-bottom: 20px;
+}
+
 #register .form-email {
     height: 40px;
 }
@@ -499,8 +507,12 @@ a:focus {
 }
 
 @media(min-width:767px) {
+    #register .form-row {
+        width: 100%;
+    }
+
     .feature-image {
-        width: 68%;
+        width: 72%;
     }
 
     .download-section {
