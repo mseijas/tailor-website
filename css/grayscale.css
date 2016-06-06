@@ -1,9 +1,11 @@
 body {
     width: 100%;
     height: 100%;
-    font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    color: #fff;
-    background-color: #000;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    color: #a9a9a9;
+    /*background-color: #f3f5f7;*/
+    background-color: #f6f7f9;
 }
 
 html {
@@ -17,11 +19,11 @@ h3,
 h4,
 h5,
 h6 {
+    color: #6b6b6b;
     margin: 0 0 35px;
-    text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
-    letter-spacing: 1px;
+    font-weight: 400;
+    letter-spacing: 0.3px;
 }
 
 p {
@@ -78,7 +80,7 @@ a:focus {
 
 .intro-logo-container .logo-subtext {
     font-family: Montserrat;
-    font-weight: 100;
+    font-weight: 400;
     font-size: 4.5vw;
     color: #bdbdbd;
     margin-top: -13px;
@@ -216,6 +218,16 @@ a:focus {
 
     .intro-col {
         margin-top: 66vh !important;
+    }
+}
+
+.box-text {
+    text-align: center;
+}
+
+@media(min-width:992px) {
+    .box-text {
+        text-align: left;
     }
 }
 
@@ -416,30 +428,35 @@ a:focus {
 }
 
 .content-section {
-    padding-top: 100px;
+    width: 100%;
 }
 
-.download-section {
-    width: 100%;
-    padding: 50px 0;
-    color: #fff;
-    background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
-    background-color: #000;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+.feature-image {
+    width: 90%;
 }
 
-#map {
-    width: 100%;
-    height: 200px;
+#about .row {
+    padding-top: 18vh;
+    border-bottom: solid 1px #e2e2e2;
+}
+
+#register {
+    background-color: #ffc302;
+}
+
+#register .row {
     margin-top: 100px;
+    margin-bottom: 300px;
+    color: #fff;
+}
+
+#register h2 {
+    color: #000;
 }
 
 @media(min-width:767px) {
-    .content-section {
-        padding-top: 250px;
+    .feature-image {
+        width: 62%;
     }
 
     .download-section {
@@ -458,7 +475,7 @@ a:focus {
     padding: 11px 40px;
     font-size: 1.2em;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 100;
+    font-weight: 400;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
@@ -545,4 +562,56 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: rgba(255,255,255,.2);
+}
+
+
+
+/* VIDEO */
+.overlay {
+  width: 100%;
+  height: 100vh;
+  /* 50% opacity black */
+  background: rgba(0,0,0,.5);
+  /* Stays locked on scroll */
+  position: fixed;
+  /* On top of the rest*/
+  z-index: 2;
+  /* Hidden */
+  opacity: 0;
+  /* No interference */
+  left: -100%;
+  /* CSS3 Transition */
+  transition: opacity .5s;
+  -webkit-transition: opacity .5s;
+}
+
+/* 90% width container */
+.video-container {
+  width: 90%;
+  /* Centering */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+
+.close {
+  width: 20px;
+  fill: white;
+  position: absolute;
+  right: 0;
+  /* Bring above video */
+  top: -30px;
+}
+
+.close:hover {
+  /* 50% opacity white */
+  fill: rgba(255,255,255,0.5);
+  cursor: pointer;
+}
+
+/* Class to fade in overlay */
+.show {
+  opacity: 1;
 }

@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Grayscale - Start Bootstrap Theme</title>
+    <title>Tailor : The smart closet</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -20,6 +20,7 @@
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -32,6 +33,18 @@
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Video Overlay -->
+    <div class="overlay">
+      <div class="video-container">
+
+        <!-- SVG Close (X) Icon -->
+        <svg class="close" xmlns="http://www.w3.org/2000/svg" viewBox="39.2 22.3 25 24.5"><path d="M39.5,46.4c0.2,0.2,0.6,0.4,0.9,0.4c0.3,0,0.6-0.1,0.9-0.4l10.3-10.3L62,46.4c0.2,0.2,0.6,0.4,0.9,0.4c0.3,0,0.6-0.1,0.9-0.4c0.5-0.5,0.5-1.3,0-1.8L53.5,34.3l9.8-9.8c0.5-0.5,0.5-1.3,0-1.8c-0.5-0.5-1.3-0.5-1.8,0l-9.8,9.8l-9.8-9.8c-0.5-0.5-1.3-0.5-1.8,0c-0.5,0.5-0.5,1.3,0,1.8l9.8,9.8L39.5,44.6C39,45.1,39,45.9,39.5,46.4z"/></svg>
+
+        <!-- Embedded video -->
+        <iframe id="video" src="https://player.vimeo.com/video/169461085?api=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </div>
+    </div>
 
     <!-- Navigation -->
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
@@ -61,7 +74,7 @@
                             <p class="logo-text logo-big">Tailor</p>
                             <p class="logo-subtext">The smart closet</p>
                             </div>
-                            <button type="button" class="btn btn-gray"><i class="fa fa-play-circle ico-play" aria-hidden="true"></i>
+                            <button type="button" class="btn btn-gray play"><i class="fa fa-play-circle ico-play" aria-hidden="true"></i>
                             Play Video</button>
                             <p class="ico-down"><i class="fa fa-angle-down" aria-hidden="true"></i></p>
                         </div>
@@ -74,60 +87,48 @@
     <!-- About Section -->
     <section id="about" class="container content-section text-center">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>About Grayscale</h2>
-                <p>Grayscale is a free Bootstrap 3 theme created by Start Bootstrap. It can be yours right now, simply download the template on <a href="http://startbootstrap.com/template-overviews/grayscale/">the preview page</a>. The theme is open source, and you can use it for any purpose, personal or commercial.</p>
-                <p>This theme features stock photos by <a href="http://gratisography.com/">Gratisography</a> along with a custom Google Maps skin courtesy of <a href="http://snazzymaps.com/">Snazzy Maps</a>.</p>
-                <p>Grayscale includes full HTML, CSS, and custom JavaScript files along with LESS files for easy customization.</p>
-            </div>
+            <h2>Automatic clothing tracking</h2>
+            <p>Description goes here, blah, blah</p>
+            <img src="img/ui-scanning.gif" class="feature-image" alt="">
         </div>
-    </section>
-
-    <!-- Download Section -->
-    <section id="download" class="content-section text-center">
-        <div class="download-section">
-            <div class="container">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h2>Download Grayscale</h2>
-                    <p>You can download Grayscale for free on the preview page at Start Bootstrap.</p>
-                    <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">Visit Download Page</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="container content-section text-center">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>Contact Start Bootstrap</h2>
-                <p>Feel free to email us to provide some feedback on our templates, give us suggestions for new templates and themes, or to just say hello!</p>
-                <p><a href="mailto:feedback@startbootstrap.com">feedback@startbootstrap.com</a>
-                </p>
-                <ul class="list-inline banner-social-buttons">
-                    <li>
-                        <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                    </li>
-                    <li>
-                        <a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
-                    </li>
-                </ul>
-            </div>
+            <h2>Intelligent outfit suggestions</h2>
+            <p>Description goes here, blah, blah</p>
+            <img src="img/ui-suggestion.gif" class="feature-image" alt="">
+        </div>
+        <div class="row">
+            <h2>Explore your closet</h2>
+            <p>Description goes here, blah, blah</p>
+            <img src="img/ui-closet.gif" class="feature-image" alt="">
         </div>
     </section>
 
-    <!-- Map Section -->
-    <div id="map"></div>
+    <section id="register" class="container content-section text-center">
+        <div class="row">
+            <h2>Subscribe for updates</h2>
+            <!-- <p>Leave us your email address and we'll notify you when Tailor becomes available</p> -->
+            <form class="form-signin">
+                <div class="row" style="margin: auto">
+                <div class="col-md-3"></div>
+                <div class="col-md-4">
+                    <label for="inputEmail" class="sr-only">Email address</label>
+                    <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="">
+                </div>
+                <div class="col-md-2">
+                    <button class="btn btn-lg btn-gray btn-block" type="submit">Sign in</button>
+                </div>
+                <div class="col-md-3"></div>
+                </div>
+          </form>
+        </div>
+    </section>
 
     <!-- Footer -->
-    <footer>
+    <!-- <footer>
         <div class="container text-center">
             <p>Copyright &copy; Your Website 2014</p>
         </div>
-    </footer>
+    </footer> -->
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
@@ -137,9 +138,6 @@
 
     <!-- Plugin JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
-
-    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
 
     <!-- Custom Theme JavaScript -->
     <script src="js/grayscale.js"></script>
