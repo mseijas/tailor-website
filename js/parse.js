@@ -18,12 +18,12 @@ $(document).ready(function() {
 
 	    newUser.save({email: emailAddress}, {
 	      success: function(object) {
-	        console.log("Object saved!")
 	        $('#register-title').text('Thanks for signing up!')
 	        $('form').html('<p id="register-thankyou-p" style="color: #a9a9a9; margin-bottom: 28px">We’ll keep you up-to-date and let you know when Tailor is available.</p>')
 	      },
 	      error: function(model, error) {
-	        console.log("Parse error!")
+	        $('#register-title').text('Oops 😕')
+	        $('form').html('<p id="register-thankyou-p" style="color: #a9a9a9; margin-bottom: 28px">An error has occurred. Please try again later.</p>')
 	      }
 	    })
 	 }
